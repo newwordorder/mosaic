@@ -38,6 +38,7 @@ p {
 
 .lead {
   color: $heading-color;
+  font-size:1.25rem;
 }
 
 .page-title {
@@ -62,4 +63,8 @@ hr {
     background: $primary;
     border: none;
   }
+}
+
+li{
+  list-style-type:none;
 }

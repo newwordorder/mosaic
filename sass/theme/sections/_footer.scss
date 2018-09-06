@@ -29,6 +29,19 @@
     a:hover, a:active {
         opacity: 0.6;
     }
+
+    .footer__list{
+        color:$white;
+        li{
+            line-height:1.8rem !important;
+            span{
+                margin-right:10px;
+                svg{
+                    font-size:1.2rem;
+                }
+            }
+        }
+    }
 }
 
 #pre-footer{
@@ -37,8 +50,18 @@
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     margin-bottom:-60px;
 
-}
+    .btn{
+        color:$white;
+    }
 
+.pre-footer{
+    &__text{
+        color:$dark;
+        font-weight:400;
+        margin-bottom:0px;
+    }
+}
+}
 .footer__logo {
   width: 150px;
 }

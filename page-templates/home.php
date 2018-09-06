@@ -26,7 +26,7 @@ $fallbackImage = get_field('fallback_image');
 
 <section id="sub-header"
 
-class="page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+class="home page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
 data-overlay="<?php echo $imageOverlay ?>"
 >
 
@@ -61,12 +61,14 @@ data-overlay="<?php echo $imageOverlay ?>"
   <?php endif; ?>
 <?php endif; ?>
 <div class="container pos-vertical-center">
-  <div class="row justify-content-center">
-    <div class="col-md-10 text-center">
-
-      <h1 class="h6"><?php the_title(); ?></h1>
-      <h1 class="page-title">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-
+  <div class="row">
+    <div class="col-md-4 ">
+      <h1 class="page-title">Relationships that count</h1>
+      <p>&nbsp;</p>
+      <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    </div>
+    <div class="col-md-8">
+      <img class="home__img" src="<?php bloginfo('template_directory'); ?>/img/people.png" />
     </div>
   </div>
 </div>
@@ -74,6 +76,8 @@ data-overlay="<?php echo $imageOverlay ?>"
 
 
 </section>
+
+<div id="page">
 
 <?php get_template_part( 'page-templates/blocks' ); ?>
 

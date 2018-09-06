@@ -17,17 +17,19 @@ $layout = get_sub_field('layout');
 $flipLayout = get_sub_field('flip_layout');
 $spaceBelow = get_sub_field('space_below');
 
+$line = get_sub_field('line');
+
 
 ?>
 
   <div class="container space-below--<?php echo $spaceBelow ?>">
 
       <div class="row flippable <?php if( $flipLayout == 'yes' ): echo 'flippable--flip'; endif; ?>">
-          <div class=" flippable__text <?php if( $layout == '1/3' ): echo 'col-md-8'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-6'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-4'; endif; ?>">
+          <div class=" flippable__text <?php if( $layout == '1/3' ): echo 'col-md-7'; endif; if($flipLayout == 'yes'): echo ' offset-md-1'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-6'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-4'; endif; ?>">
               <?php echo $text ?>
               <?php get_template_part( 'page-templates/blocks/block-partials/buttons' ); ?>
           </div>
-          <div class="<?php if( $layout == '1/3' ): echo 'col-md-4'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-6'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-8'; endif; ?> flippable__image">
+          <div class="<?php if( $layout == '1/3' ): echo 'col-md-4'; endif; ?> <?php if($flipLayout != 'yes' ): echo 'offset-md-1'; endif; ?> <?php if( $layout == '1/2' ): echo 'col-md-6'; endif; ?> <?php if( $layout == '2/3' ): echo 'col-md-8'; endif; ?> flippable__image">
 
             <?php if( $media == 'image' ): ?>
               <?php if( !empty($image) ):
@@ -69,6 +71,11 @@ $spaceBelow = get_sub_field('space_below');
             <?php endif; //end $media ?>
           </div>
       </div>
+
+      <?php if($line):
+      ?>
+      <div class="line"></div>
+      <?php endif; ?>
     </div>
 
 <?php endif; //end text_image row

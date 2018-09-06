@@ -62,11 +62,8 @@ data-overlay="<?php echo $imageOverlay ?>"
 <?php endif; ?>
 <div class="container pos-vertical-center">
   <div class="row justify-content-center">
-    <div class="col-md-10 text-center">
-
-      <h1 class="h6"><?php the_title(); ?></h1>
-      <h1 class="page-title">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-
+    <div class="col-md-12">
+      <h1 class="page-title"><?php the_title(); ?></h1>
     </div>
   </div>
 </div>

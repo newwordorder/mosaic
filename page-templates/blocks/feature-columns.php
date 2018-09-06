@@ -34,9 +34,11 @@ if( get_row_layout() == 'feature_columns' ):
                 $alt = $image['alt'];
 
                 $size = '600x400';
-                $thumb = $image['sizes'][ $size ];
+                $thumb = $image['url'];
                 $width = $image['sizes'][ $size . '-width' ];
                 $height = $image['sizes'][ $size . '-height' ];
+
+
 
                 ?>
                 <img class="rounded feature-column__image" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"/>
