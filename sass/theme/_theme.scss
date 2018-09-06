@@ -4,7 +4,7 @@
 @import "sections/sections";
 
 body {
-  background: $dark;
+  background: $white;
 }
 
 .page {
@@ -261,7 +261,7 @@ section {
   }
 
   padding: 200px 0 100px;
-  background-color: $dark;
+  background-color: $white;
 
   @include media-breakpoint-down(sm) {
     padding: 150px 0 50px;
@@ -434,6 +434,7 @@ section {
     border-color: $pagination-disabled-border-color;
   }
 }
+
 
 
 //

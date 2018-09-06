@@ -1,6 +1,5 @@
-$font-serif: 'Frank Ruhl Libre', serif;
-$font-sans: 'Libre Franklin', sans-serif;
-
+$font-sans: 'century-gothic', sans-serif;
+$font-serif: $font-sans;
 
 
 html {
@@ -19,10 +18,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 20px;
-  color: $heading-color;
+  color: $heading-color; 
   font-family: $font-serif;
+  font-weight:700;
 }
 
 h6, .h6 {
