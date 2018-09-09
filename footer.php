@@ -113,10 +113,13 @@
 			links[i].addEventListener('click', function(e) {
 				e.preventDefault();
 				reveal('top');
-				if(e.target == "#"){
-
+				if(e.target.tagName === 'A'){
+					window.setTimeout(function (){window.location = e.target;}, 500);
+				}else if(e.target.tagName === 'IMG'){
+					var newTarget = e.target.parentElement.href; 
+					window.setTimeout(function (){window.location = newTarget;}, 500);
 				}else{
-				window.setTimeout(function (){window.location = e.target;}, 500);
+
 				}
 			});
 		}
