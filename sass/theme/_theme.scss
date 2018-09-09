@@ -2,13 +2,15 @@
 @import "stack";
 @import "typography";
 @import "sections/sections";
+@import "revealer";
+
 
 body {
-  background: $white;
+  background: $light;
 }
 
 .page {
-  background: $white;
+  opacity:0;
 }
 
 section {

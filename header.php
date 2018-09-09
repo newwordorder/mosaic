@@ -78,4 +78,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 </script>
 
 
-	<div class="page">
+	<div class="page page--current" id="page">
