@@ -99,7 +99,7 @@
 		var pages = document.getElementsByClassName('page');
 
 		revealerWrapper = document.getElementById('revealer');
-		
+
 		reveal('top');
 
 		window.setTimeout(()=>{
@@ -114,10 +114,10 @@
 				e.preventDefault();
 				reveal('top');
 				if(e.target.tagName === 'A'){
-					window.setTimeout(function (){window.location = e.target;}, 500);
+					window.setTimeout(function (){window.location = e.target;}, 100);
 				}else if(e.target.tagName === 'IMG'){
 					var newTarget = e.target.parentElement.href; 
-					window.setTimeout(function (){window.location = newTarget;}, 500);
+					window.setTimeout(function (){window.location = newTarget;}, 100);
 				}else{
 
 				}
