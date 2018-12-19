@@ -484,3 +484,11 @@ section {
 .pagination-sm {
   @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
 }
+
+.video-play-icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+
+}

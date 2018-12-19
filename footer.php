@@ -13,7 +13,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-10 d-flex align-items-center">
-					<h3 class="pre-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</h3>
+					<h3 class="pre-footer__text">We're always up for a chat. Get in touch with us to discover how we put the human back in accounting. </h3>
 			</div>
 			<div class="col-sm-2 d-flex align-items-center">
 					<a class="btn btn-dark">Get in Touch</a>

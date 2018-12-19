@@ -65,10 +65,20 @@ data-overlay="<?php echo $imageOverlay ?>"
     <div class="col-md-4 ">
       <h1 class="page-title">Relationships that count</h1>
       <p>&nbsp;</p>
-      <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      <p>We're chartered accountants who believe numbers matter, but people matter more.</p>
     </div>
     <div class="col-md-8">
-      <img class="home__img" src="<?php bloginfo('template_directory'); ?>/img/people.png" />
+      <div class="modal-instance">
+          <img class="home__img" src="<?php bloginfo('template_directory'); ?>/img/people.png" />
+            <div class="video-play-icon video-play-icon--sm modal-trigger box-shadow"></div>
+            <div class="modal-container">
+                <div class="modal-content bg-dark" data-width="60%" data-height="60%">
+                      <iframe src="https://player.vimeo.com/video/307165749?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <!--end of modal-content-->
+            </div>
+            <!--end of modal-container-->
+        </div>
     </div>
   </div>
 </div>
