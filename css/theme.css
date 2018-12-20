@@ -17024,7 +17024,7 @@ li {
     @media (max-width: 767.98px) {
       #header .header__navigation a {
         margin-left: 0px;
-        padding: 20px 0px; } }
+        padding: 0px 0px; } }
     #header .header__navigation a:hover {
       color: #1d475c; }
 
@@ -17089,9 +17089,15 @@ li {
           justify-content: flex-end; }
   @media (max-width: 767.98px) {
     .header__navigation {
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .header__navigation li {
+        margin-left: 0 !important;
+        margin-top: 1em;
+        margin-bottom: 1em; }
+        .header__navigation li a {
+          padding: 0; } }
 
 .header-nav {
   padding: 0;
@@ -17742,12 +17748,46 @@ section.bg-effect--ken-burns {
   background: #d1eff8;
   padding: 0px;
   max-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
   #sub-header.home {
     max-height: 800px; }
   #sub-header * {
     color: #1d475c; }
+
+#sub-header--home {
+  background: #d1eff8;
+  padding: 0px;
+  max-height: 300px;
+  display: block;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+  #sub-header--home.home {
+    max-height: 800px; }
+  #sub-header--home * {
+    color: #1d475c; }
+  @media (max-width: 767.98px) {
+    #sub-header--home {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
@@ -17781,6 +17821,9 @@ section.bg-effect--ken-burns {
   top: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%); }
+
+.toggle-menu .line {
+  margin: 0; }
 
 /*
 * Use existing Bootstrap 4 classes and

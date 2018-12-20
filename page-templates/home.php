@@ -24,7 +24,7 @@ $video = get_field('youtube_code');
 $fallbackImage = get_field('fallback_image');
 ?>
 
-<section id="sub-header"
+<section id="sub-header--home"
 
 class="home page-header page-header--home bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
 data-overlay="<?php echo $imageOverlay ?>"

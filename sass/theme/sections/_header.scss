@@ -59,7 +59,7 @@
 
       @include media-breakpoint-down(sm) {
         margin-left: 0px;
-        padding: 20px 0px;
+        padding: 0px 0px;
       }
 
       &:hover {
@@ -130,7 +130,15 @@
   justify-content: flex-end;
 
   @include media-breakpoint-down(sm) {
-    justify-content: flex-start;
+    justify-content: center;
+    li{
+      margin-left:0 !important;
+      a{
+        padding:0;
+      }
+        margin-top: 1em;
+      margin-bottom: 1em;
+    }
   }
 
 

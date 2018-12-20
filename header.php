@@ -45,10 +45,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				</a>
 
-				<a id="toggleMenu" class="toggle-menu">
+				<p id="toggleMenu" class="toggle-menu">
 						<span class="line"></span>
 						<span class="line"></span>
-				</a>
+</p>
 
 
 				<!-- The WordPress Menu goes here -->
