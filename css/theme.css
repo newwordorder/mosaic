@@ -17401,7 +17401,7 @@ body {
   background: #d1eff8; }
 
 .page {
-  opacity: 0; }
+  opacity: 1; }
 
 section.bg--none {
   background-color: #fff; }
@@ -17746,7 +17746,7 @@ section.bg-effect--ken-burns {
 
 #sub-header {
   background: #d1eff8;
-  padding: 0px;
+  padding: 100px 0px;
   max-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;

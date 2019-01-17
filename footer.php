@@ -59,6 +59,7 @@
 <?php wp_footer(); ?>
 
 <script>
+/*
 	window.onload = function(){
 		load();
 	}
@@ -82,6 +83,7 @@
 				//var nextPage = pages[currentPage === 0 ? 1 : 0];
 				//nextPage.className = 'page';
 			}
+		
 		};
 		revealer = new Revealer(revealerOpts);
 
@@ -126,7 +128,7 @@
 
 	}
 
-
+*/
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
