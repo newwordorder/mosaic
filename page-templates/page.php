@@ -1,10 +1,11 @@
 <?php
+
 /**
-* Template Name: Page
-*
-*
-* @package understrap
-*/
+ * Template Name: Page
+ *
+ *
+ * @package understrap
+ */
 
 get_header();
 
@@ -26,17 +27,18 @@ $fallbackImage = get_field('fallback_image');
 
 <section id="sub-header"
 
-class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
+class="page-header page-header--page bg-effect--<?php echo $backgroundEffect ?> imagebg videobg <?php if ($invertColours == 'yes') : echo 'image--light';
+                                                                                                endif; ?>"
 data-overlay="<?php echo $imageOverlay ?>"
 >
 
-<?php if( $headerType == 'image' ): ?>
+<?php if ($headerType == 'image') : ?>
 
-  <?php if( !empty($image) ):
+  <?php if (!empty($image)) :
 
     // vars
-    $url = $image['url'];
-    $alt = $image['alt'];
+  $url = $image['url'];
+  $alt = $image['alt'];
 
   ?>
     <div class="background-image-holder">
@@ -44,15 +46,15 @@ data-overlay="<?php echo $imageOverlay ?>"
     </div>
   <?php endif; ?>
 <?php endif; ?>
-<?php if( $headerType == 'video' ): ?>
+<?php if ($headerType == 'video') : ?>
 
   <div class="youtube-background" data-video-url="<?php echo $video ?>"></div>
 
-  <?php if( !empty($fallbackImage) ):
+  <?php if (!empty($fallbackImage)) :
 
     // vars
-    $url = $fallbackImage['url'];
-    $alt = $fallbackImage['alt'];
+  $url = $fallbackImage['url'];
+  $alt = $fallbackImage['alt'];
 
   ?>
     <div class="background-image-holder">
@@ -61,7 +63,7 @@ data-overlay="<?php echo $imageOverlay ?>"
   <?php endif; ?>
 <?php endif; ?>
 <div class="container">
-  <div class="row justify-content-center">
+  <div class="row">
     <div class="col-md-12">
       <h1 class="page-title"><?php the_title(); ?></h1>
     </div>
@@ -72,6 +74,7 @@ data-overlay="<?php echo $imageOverlay ?>"
 
 </section>
 
-<?php get_template_part( 'page-templates/blocks' ); ?>
+<?php get_template_part('page-templates/blocks'); ?>
 
 <?php get_footer();
+

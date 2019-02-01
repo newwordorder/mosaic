@@ -1,10 +1,8 @@
-$font-sans: 'century-gothic', sans-serif;
+$font-sans: "century-gothic", sans-serif;
 $font-serif: $font-sans;
-
 
 html {
   font-size: 1rem;
-
 }
 
 /** @include media-breakpoint-up(lg) {
@@ -18,14 +16,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   margin-bottom: 20px;
-  color: $heading-color; 
+  color: $heading-color;
   font-family: $font-serif;
-  font-weight:700;
+  font-weight: 700;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-family: $font-sans;
   font-weight: 700;
   text-transform: uppercase;
@@ -38,21 +48,24 @@ p {
 
 .lead {
   color: $heading-color;
-  font-size:1.25rem;
+  font-size: 1.25rem;
 }
 
 .page-title {
   font-size: 3.4em;
   line-height: 1em;
   margin-bottom: 0;
+  @media screen and(max-width: 992px) {
+    font-size: 2.4em;
+  }
 }
 
 p:last-of-type {
   margin-bottom: 0;
 }
 
-
-ul, ol {
+ul,
+ol {
   font-family: $font-sans;
 }
 
@@ -65,6 +78,6 @@ hr {
   }
 }
 
-li{
-  list-style-type:none;
+li {
+  list-style-type: none;
 }

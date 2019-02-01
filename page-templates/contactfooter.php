@@ -1,4 +1,5 @@
 <?php
+
 /**
  *
  * Contains the closing of the #content div and all content after
@@ -38,78 +39,6 @@
 </footer>
 </div>
 
-
-
-<script>
-	window.onload = function(){
-		load();
-	}
-
-	function load(){
-		var revealerOpts = {
-			// the layers are the elements that move from the sides
-			nmbLayers : 1,
-			// bg color of each layer
-			bgcolor : '#d1eff8',
-
-			// effect classname
-			effect : 'anim--effect-1',
-			onStart : function(direction) {
-				// next page gets class page--animate-[direction]
-				//var nextPage = pages[currentPage === 0 ? 1 : 0];
-				//classie.add(nextPage, 'page--animate-' + direction);
-			},
-			onEnd : function(direction) {
-				// remove class page--animate-[direction] from next page
-				//var nextPage = pages[currentPage === 0 ? 1 : 0];
-				//nextPage.className = 'page';
-			}
-		};
-		revealer = new Revealer(revealerOpts);
-
-		function reveal(direction) {
-			var callbackTime = 1000,
-				callbackFn = function() {
-					classie.remove(document.getElementById('page'), 'page--current');
-				};
-
-				revealer.reveal(direction, callbackTime, callbackFn);
-		}
-
-		classie.add(document.getElementById('page'), 'page--current');
-
-		var pages = document.getElementsByClassName('page');
-
-		revealerWrapper = document.getElementById('revealer');
-
-		reveal('top');
-
-		window.setTimeout(()=>{
-			for (i = 0; i < pages.length; i++){
-			pages[i].style.opacity = '1';
-		}},500)
-
-
-		var links = document.querySelectorAll('a');
-		for (i = 0; i < links.length; i++){
-			links[i].addEventListener('click', function(e) {
-				e.preventDefault();
-				reveal('top');
-				if(e.target.tagName === 'A'){
-					window.setTimeout(function (){window.location = e.target;}, 100);
-				}else if(e.target.tagName === 'IMG'){
-					var newTarget = e.target.parentElement.href; 
-					window.setTimeout(function (){window.location = newTarget;}, 100);
-				}else{
-
-				}
-			});
-		}
-
-	}
-
-
-</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/header.js"></script>

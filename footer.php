@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer.
  *
@@ -16,7 +17,7 @@
 					<h3 class="pre-footer__text">We're always up for a chat. Get in touch with us to discover how we put the human back in accounting. </h3>
 			</div>
 			<div class="col-sm-2 d-flex align-items-center">
-					<a class="btn btn-dark">Get in Touch</a>
+					<a class="btn btn-dark" href="<?php get_site_url(); ?>/contact">Get in Touch</a>
 				</div>
 		</div>
 	</div>

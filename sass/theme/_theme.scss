@@ -4,19 +4,16 @@
 @import "sections/sections";
 @import "revealer";
 
-
 body {
   background: $light;
 }
 
 .page {
-  opacity:0;
+  opacity: 1;
 }
 
 section {
-
   &.bg {
-
     &--none {
       background-color: #fff;
     }
@@ -38,11 +35,9 @@ section {
         color: #fff;
       }
     }
-
   }
 
   &.space {
-
     &--none {
       padding: 0;
     }
@@ -62,12 +57,11 @@ section {
     &--xlg {
       padding: 200px 0;
     }
-
   }
 
   &.bg-effect {
-    &--ken-burns{
-        overflow: hidden;
+    &--ken-burns {
+      overflow: hidden;
       & > .background-image-holder,
       & > img:only-child {
         animation: kenBurns 15s ease alternate infinite;
@@ -75,11 +69,9 @@ section {
       }
     }
   }
-
 }
 
 .space-below {
-
   &--none {
     margin-bottom: 0;
   }
@@ -99,7 +91,6 @@ section {
   &--xlg {
     margin-bottom: 200px;
   }
-
 }
 
 .flippable {
@@ -114,10 +105,9 @@ section {
     order: 2;
 
     @include media-breakpoint-down(sm) {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
   }
-
 
   &--flip {
     .flippable__text {
@@ -126,7 +116,6 @@ section {
 
     .flippable__image {
       order: 1;
-
     }
   }
 
@@ -142,7 +131,6 @@ section {
 }
 
 .text-center {
-
   hr.short {
     margin-left: auto;
     margin-right: auto;
@@ -175,7 +163,7 @@ section {
   &--outline {
     background: transparent;
     color: $primary;
-    border: 1px solid $primary; 
+    border: 1px solid $primary;
 
     &:hover {
       background: $primary;
@@ -199,7 +187,6 @@ section {
       padding: 0.8em 0em;
     }
   }
-
 }
 
 .link {
@@ -220,7 +207,6 @@ section {
 }
 
 .cta {
-
   &__buttons {
     text-align: right;
 
@@ -233,32 +219,32 @@ section {
       margin-top: 30px;
     }
   }
-
 }
 
 .page-header {
-
   &--home {
     padding: 200px 0;
-    height: 80vh;
     max-height: 800px;
     min-height: 400px;
     position: relative;
 
     & .pos-vertical-center {
       transform: translateY(-20%);
+      @media screen and (max-width: 425px) {
+        transform: translateY(0%);
+      }
     }
   }
 
   &--page {
-    padding: 200px 0;
-    height: 50vh;
-    max-height: 800px;
-    min-height: 400px;
+    padding: 200px 0 50px 0px;
     position: relative;
 
     & .pos-vertical-center {
       transform: translateY(-20%);
+      @media screen and (max-width: 425px) {
+        transform: translateY(0%);
+      }
     }
   }
 
@@ -292,12 +278,10 @@ section {
 
   &--large {
     width: 100%;
-
   }
 
   &--small {
     width: 50%;
-
 
     @include media-breakpoint-down(sm) {
       width: 100%;
@@ -305,10 +289,10 @@ section {
   }
 
   &__title {
-  padding: 1.85714286em;
-  z-index: 2;
-  position: absolute;
-  bottom:0;
+    padding: 1.85714286em;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
 
     & * {
       color: #fff;
@@ -351,14 +335,28 @@ section {
   p {
     margin-bottom: 20px;
   }
-
 }
 
 .related-posts {
   background: $light;
 }
 
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .modal-video {
   display: flex;
@@ -366,7 +364,7 @@ section {
   justify-content: center;
 
   &__text {
-        display: inline-block;
+    display: inline-block;
   }
 }
 
@@ -437,57 +435,70 @@ section {
   }
 }
 
-.line{
+.line {
   width: 100%;
   height: 1px;
   background: #efefef;
   margin: 120px auto;
-  &.nomargin{
-    margin-top:60px;
-    margin-bottom:0px;
+  &.nomargin {
+    margin-top: 60px;
+    margin-bottom: 0px;
   }
 }
 
-.specialty_menu{
-  a{
-    text-decoration:none;
-    color:$primary;
-    font-size:1rem;
+.specialty_menu {
+  a {
+    text-decoration: none;
+    color: $primary;
+    font-size: 1rem;
     margin: auto 8px;
   }
 }
 
-#sub-header{
-  background:$light;
-  padding:0px;
-  max-height:300px;
+#sub-header {
+  background: $light;
+  padding: 150px 0px;
+  max-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  &.home{
-    max-height:800px;
+
+  &.home {
+    max-height: 800px;
+    @media screen and (max-width: 768px) {
+      max-height: auto;
+    }
   }
 
-  *{
-    color:$dark;
+  @media screen and (max-width: 768px) {
+    max-height: auto;
+    padding: 100px 0px 50px 0px;
+    min-height: unset;
+    height: auto;
+  }
+
+  * {
+    color: $dark;
   }
 
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
-#sub-header--home{
-  background:$light;
-  padding:0px;
-  max-height:300px;
+#sub-header--home {
+  background: $light;
+  max-height: 300px;
   display: block;
 
-  &.home{
-    max-height:800px;
+  &.home {
+    max-height: 800px;
+    @media screen and (max-width: 768px) {
+      max-height: none;
+    }
   }
 
-  *{
-    color:$dark;
+  * {
+    color: $dark;
   }
 
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -498,7 +509,6 @@ section {
     flex-direction: column;
     justify-content: flex-end;
   }
-
 }
 
 //
@@ -506,25 +516,35 @@ section {
 //
 
 .pagination-lg {
-  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+  @include pagination-size(
+    $pagination-padding-y-lg,
+    $pagination-padding-x-lg,
+    $font-size-lg,
+    $line-height-lg,
+    $border-radius-lg
+  );
 }
 
 .pagination-sm {
-  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+  @include pagination-size(
+    $pagination-padding-y-sm,
+    $pagination-padding-x-sm,
+    $font-size-sm,
+    $line-height-sm,
+    $border-radius-sm
+  );
 }
 
-.video-play-icon{
+.video-play-icon {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%);
-
 }
 
-.toggle-menu .line{
-  margin:0;
+.toggle-menu .line {
+  margin: 0;
 }
 
-#headerNavDropdown{
-
+#headerNavDropdown {
 }

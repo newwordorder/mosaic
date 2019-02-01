@@ -2,38 +2,41 @@
 
 $blockSetup = get_sub_field('block_setup');
 
-  $space = $blockSetup['space'];
-  $background = $blockSetup['block_background'];
-  $flipLayout = $blockSetup['flip_layout'];
+$space = $blockSetup['space'];
+$background = $blockSetup['block_background'];
+$flipLayout = $blockSetup['flip_layout'];
+$id = $blockSetup['id'];
 
 $backgroundImage = $blockSetup['background_image'];
 
-  $image = $backgroundImage['background_image'];
-  $imageOverlay = $backgroundImage['image_overlay'];
-  $backgroundEffect = $backgroundImage['background_effect'];
-  $invertColours = $backgroundImage['invert_colours'];
+$image = $backgroundImage['background_image'];
+$imageOverlay = $backgroundImage['image_overlay'];
+$backgroundEffect = $backgroundImage['background_effect'];
+$invertColours = $backgroundImage['invert_colours'];
 
 ?>
 
 
-<section
+<section id="<?php echo $id; ?>"
 
-  class="bg--<?php echo $background ?> space--<?php echo $space ?> bg-effect--<?php echo $backgroundEffect ?> <?php if( $background == 'image' ): echo 'imagebg'; endif; ?> <?php if( $invertColours == 'yes' ): echo 'image--light'; endif; ?>"
-  <?php if( $background == 'image' ): ?>
+  class="bg--<?php echo $background ?> space--<?php echo $space ?> bg-effect--<?php echo $backgroundEffect ?> <?php if ($background == 'image') : echo 'imagebg';
+                                                                                                              endif; ?> <?php if ($invertColours == 'yes') : echo 'image--light';
+                                                                                                                        endif; ?>"
+  <?php if ($background == 'image') : ?>
     data-overlay="<?php echo $imageOverlay ?>"
   <?php endif; ?>
 >
-<?php if( $background == 'image' ):?>
+<?php if ($background == 'image') : ?>
 
   <?php
 
-  if( !empty($image) ):
+  if (!empty($image)) :
 
   	// vars
-  	$url = $image['url'];
-  	$alt = $image['alt'];
+  $url = $image['url'];
+  $alt = $image['alt'];
 
-   ?>
+  ?>
   <div class="background-image-holder">
   		<img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>"/>
   </div>
