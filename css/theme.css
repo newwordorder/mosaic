@@ -17871,6 +17871,9 @@ section.bg-effect--ken-burns {
 .toggle-menu .line {
   margin: 0; }
 
+.modal-instance:not(.block) {
+  display: block; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
