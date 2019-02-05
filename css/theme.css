@@ -17285,7 +17285,7 @@ li {
   background: #d1eff8;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-  margin-bottom: -20px; }
+  margin-bottom: -40px; }
   #pre-footer .btn,
   #pre-footer .wpcf7 input[type=submit], .wpcf7 #pre-footer input[type=submit] {
     color: #fff; }
@@ -17427,7 +17427,7 @@ li {
     transform: translate3d(0, -200%, 0); } }
 
 body {
-  background: #d1eff8; }
+  background: #fff; }
 
 .page {
   opacity: 1; }
@@ -17588,7 +17588,6 @@ section.bg-effect--ken-burns {
   background-color: #fff; }
   .page-header--home {
     padding: 200px 0;
-    max-height: 800px;
     min-height: 400px;
     position: relative; }
     .page-header--home .pos-vertical-center {
@@ -17782,7 +17781,6 @@ section.bg-effect--ken-burns {
 #sub-header {
   background: #d1eff8;
   padding: 150px 0px;
-  max-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17795,11 +17793,9 @@ section.bg-effect--ken-burns {
           justify-content: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-  #sub-header.home {
-    max-height: 800px; }
-    @media screen and (max-width: 768px) {
-      #sub-header.home {
-        max-height: auto; } }
+  @media screen and (max-width: 768px) {
+    #sub-header.home {
+      max-height: auto; } }
   @media screen and (max-width: 768px) {
     #sub-header {
       max-height: auto;
@@ -17811,15 +17807,12 @@ section.bg-effect--ken-burns {
 
 #sub-header--home {
   background: #d1eff8;
-  max-height: 300px;
   display: block;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
-  #sub-header--home.home {
-    max-height: 800px; }
-    @media screen and (max-width: 768px) {
-      #sub-header--home.home {
-        max-height: none; } }
+  @media screen and (max-width: 768px) {
+    #sub-header--home.home {
+      max-height: none; } }
   #sub-header--home * {
     color: #1d475c; }
   @media (max-width: 767.98px) {

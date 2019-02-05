@@ -5,7 +5,7 @@
 @import "revealer";
 
 body {
-  background: $light;
+  background: #fff;
 }
 
 .page {
@@ -224,7 +224,6 @@ section {
 .page-header {
   &--home {
     padding: 200px 0;
-    max-height: 800px;
     min-height: 400px;
     position: relative;
 
@@ -458,13 +457,11 @@ section {
 #sub-header {
   background: $light;
   padding: 150px 0px;
-  max-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   &.home {
-    max-height: 800px;
     @media screen and (max-width: 768px) {
       max-height: auto;
     }
@@ -487,11 +484,9 @@ section {
 
 #sub-header--home {
   background: $light;
-  max-height: 300px;
   display: block;
 
   &.home {
-    max-height: 800px;
     @media screen and (max-width: 768px) {
       max-height: none;
     }
