@@ -17587,7 +17587,7 @@ section.bg-effect--ken-burns {
   padding: 200px 0 100px;
   background-color: #fff; }
   .page-header--home {
-    padding: 200px 0;
+    padding: 200px 0px 50px 0px;
     min-height: 400px;
     position: relative; }
     .page-header--home .pos-vertical-center {
@@ -17780,7 +17780,7 @@ section.bg-effect--ken-burns {
 
 #sub-header {
   background: #d1eff8;
-  padding: 150px 0px;
+  padding: 150px 0px 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
