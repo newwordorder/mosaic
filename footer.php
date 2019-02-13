@@ -17,7 +17,7 @@
 					<h3 class="pre-footer__text">We're always up for a chat. Get in touch with us to discover how we put the human back in accounting. </h3>
 			</div>
 			<div class="col-sm-2 d-flex align-items-center">
-					<a class="btn btn-dark" href="<?php get_site_url(); ?>/contact">Get in Touch</a>
+					<a class="btn btn-dark" href="<?php echo get_home_url(); ?>/contact">Get in Touch</a>
 				</div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@
 						<li><span><i class="fas fa-phone"></i></span> 07 3839 9275</li>
 						<li><span><i class="fas fa-print"></i></span> 07 3839 9274</li>
 						<li><span><i class="fas fa-envelope"></i></span> info@mosaicca.com.au</li>
-						<li><span><i class="fab fa-linkedin"></i></span></li>
+						<!--<li><span><i class="fab fa-linkedin"></i></span></li>-->
 
 					</ul>
 				</div>

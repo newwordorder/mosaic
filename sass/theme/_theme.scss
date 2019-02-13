@@ -173,7 +173,8 @@ section {
 
   &--link {
     background: transparent;
-    color: $primary;
+    color: $dark;
+    text-decoration: none !important;
 
     &:hover {
       color: darken($primary, 10%);
@@ -223,7 +224,7 @@ section {
 
 .page-header {
   &--home {
-    padding: 200px 0px 50px 0px;
+    padding: 50px 0px 0px 0px;
     min-height: 400px;
     position: relative;
 
